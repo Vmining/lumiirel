@@ -1,0 +1,575 @@
+{
+  "schemaVersion": 1,
+  "contract": "lumii.windows.resource-provider",
+  "revision": 5,
+  "activationState": "active",
+  "platform": "windows",
+  "architecture": "x64",
+  "productModel": {
+    "installationCompleteState": "USABLE_CORE_READY",
+    "tiers": [
+      "usable-core",
+      "progressive",
+      "optional"
+    ],
+    "optionalRequiresUserConfirmation": true
+  },
+  "securityPolicy": {
+    "httpsOnly": true,
+    "redirectsRequireAllowlistedHost": true,
+    "artifactHashRequired": true,
+    "authenticodeRequiredWhenAvailable": true,
+    "remoteCommandTextAllowed": false,
+    "receiptDoesNotReplacePayloadValidation": true
+  },
+  "providers": [
+    {
+      "id": "postgresql",
+      "capability": "database-foundation",
+      "productTier": "usable-core",
+      "required": true,
+      "configureAfter": [
+        "pgvector"
+      ],
+      "sourceStrategy": "official-portable",
+      "ownershipPolicy": "reuse-or-official-managed",
+      "license": {
+        "id": "PostgreSQL",
+        "url": "https://www.postgresql.org/about/licence/"
+      },
+      "upgradePolicy": "pinned-manual-catalog-revision",
+      "version": "18.4",
+      "platform": "windows",
+      "architecture": "x64",
+      "allowedHosts": [
+        "www.postgresql.org",
+        "get.enterprisedb.com"
+      ],
+      "officialPage": "https://www.postgresql.org/download/windows/",
+      "artifact": {
+        "url": "https://get.enterprisedb.com/postgresql/postgresql-18.4-1-windows-x64-binaries.zip",
+        "fileName": "postgresql-18.4-1-windows-x64-binaries.zip",
+        "size": 337444127,
+        "sha256": "7effe34c0bf89027b3f171447d351cbc460f4566c8d0f643daec67f140787858"
+      },
+      "discoveryAdapter": "postgresql-windows",
+      "installAdapter": "official-portable",
+      "configureAdapter": "lumii-postgresql",
+      "healthAdapter": "postgresql-foundation",
+      "uninstallPolicy": "detach-only-by-default-preserve-database-data",
+      "legacyV2": {
+        "packageId": "postgresql",
+        "acceptedUntilV3Cutover": true,
+        "newV3ClientsMayConsume": false
+      }
+    },
+    {
+      "id": "microsoft-visual-cpp-x64",
+      "capability": "native-cpp-build-toolchain",
+      "productTier": "optional",
+      "required": false,
+      "requiresUserConfirmation": true,
+      "requiredWhen": "advanced-source-build-only",
+      "sourceStrategy": "official-installer",
+      "ownershipPolicy": "reuse-or-shared-official-managed",
+      "license": {
+        "id": "LicenseRef-Microsoft-Visual-Studio",
+        "url": "https://visualstudio.microsoft.com/license-terms/"
+      },
+      "upgradePolicy": "pinned-channel-and-bootstrapper-manual-revision",
+      "version": "17.14.37531.7",
+      "platform": "windows",
+      "architecture": "x64",
+      "allowedHosts": [
+        "aka.ms",
+        "visualstudio.microsoft.com",
+        "download.visualstudio.microsoft.com"
+      ],
+      "officialPage": "https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022",
+      "channelManifest": {
+        "url": "https://download.visualstudio.microsoft.com/download/pr/00d9d26c-2727-42c2-aa9e-eda63b03e1ee/337370d30d94eff4d1ba57b9f8218b638032f86b795afe2c6888ff96f10c5a2d/VisualStudio.17.Release.chman",
+        "size": 91684,
+        "sha256": "4892fdd724add04f599dc63b671b6f5b67082a3a395b5873582e35e12d0e4e04"
+      },
+      "artifact": {
+        "url": "https://download.visualstudio.microsoft.com/download/pr/00d9d26c-2727-42c2-aa9e-eda63b03e1ee/15df9d3b4c2b2eaf44704d5e938c895341b9cd8ba40a9a18610f8d18cbe01b53/vs_BuildTools.exe",
+        "fileName": "vs_BuildTools-17.14.37531.7.exe",
+        "size": 4458736,
+        "sha256": "15df9d3b4c2b2eaf44704d5e938c895341b9cd8ba40a9a18610f8d18cbe01b53"
+      },
+      "signature": {
+        "required": true,
+        "expectedPublisher": "Microsoft Corporation"
+      },
+      "installerRecipe": {
+        "productId": "Microsoft.VisualStudio.Product.BuildTools",
+        "workloadIds": [
+          "Microsoft.VisualStudio.Workload.VCTools"
+        ],
+        "componentIds": [
+          "Microsoft.VisualStudio.Component.VC.Tools.x86.x64",
+          "Microsoft.VisualStudio.Component.Windows10SDK"
+        ],
+        "includeRecommended": false,
+        "passive": true,
+        "noRestart": true
+      },
+      "discoveryAdapter": "visual-studio-build-tools-windows",
+      "installAdapter": "official-installer",
+      "configureAdapter": "visual-studio-dev-environment",
+      "healthAdapter": "msvc-x64-toolchain",
+      "uninstallPolicy": "detach-only-by-default",
+      "legacyV2": {
+        "acceptedUntilV3Cutover": true,
+        "newV3ClientsMayConsume": true
+      }
+    },
+    {
+      "id": "pgvector",
+      "capability": "postgresql-vector-extension",
+      "productTier": "usable-core",
+      "required": true,
+      "dependencies": [
+        "postgresql"
+      ],
+      "sourceStrategy": "official-portable",
+      "ownershipPolicy": "official-managed-extension",
+      "license": {
+        "id": "PostgreSQL",
+        "url": "https://github.com/pgvector/pgvector/blob/v0.8.2/LICENSE"
+      },
+      "upgradePolicy": "pinned-tag-and-commit-manual-revision",
+      "version": "0.8.2",
+      "platform": "windows",
+      "architecture": "x64",
+      "allowedHosts": [
+        "tradeos.digitalrobotics.io"
+      ],
+      "officialPage": "https://github.com/pgvector/pgvector",
+      "artifact": {
+        "role": "prebuilt-extension",
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/pgvector-0.8.2-postgresql18-windows-x64.zip",
+        "fileName": "pgvector-0.8.2-postgresql18-windows-x64.zip",
+        "size": 159927,
+        "sha256": "7d161dc1e018774a8bc411f1caa77c2efff0eec8853997fdf80b838324997744"
+      },
+      "source": {
+        "repository": "https://github.com/pgvector/pgvector.git",
+        "tag": "v0.8.2",
+        "commit": "cab9da72c04353f143bb06b42ab70a403daac64a",
+        "buildSystem": "release-prebuilt",
+        "makefile": "Makefile.win"
+      },
+      "discoveryAdapter": "pgvector-windows",
+      "installAdapter": "official-portable",
+      "configureAdapter": "lumii-pgvector",
+      "healthAdapter": "pgvector-extension",
+      "uninstallPolicy": "detach-only-by-default",
+      "legacyV2": {
+        "bundledInsidePostgresqlPackage": true,
+        "acceptedUntilV3Cutover": true,
+        "newV3ClientsMayConsume": false
+      }
+    },
+    {
+      "id": "digillm-engine",
+      "capability": "local-model-engine",
+      "productTier": "optional",
+      "required": false,
+      "requiresUserConfirmation": true,
+      "sourceStrategy": "official-portable-composite",
+      "ownershipPolicy": "official-managed",
+      "license": {
+        "id": "MIT",
+        "url": "https://github.com/ggml-org/llama.cpp/blob/b10442/LICENSE"
+      },
+      "upgradePolicy": "pinned-release-and-commit-manual-revision",
+      "version": "b10442",
+      "platform": "windows",
+      "architecture": "x64",
+      "allowedHosts": [
+        "tradeos.digitalrobotics.io"
+      ],
+      "officialPage": "https://github.com/ggml-org/llama.cpp/releases/tag/b10442",
+      "source": {
+        "repository": "https://github.com/ggml-org/llama.cpp",
+        "tag": "b10442",
+        "commit": "9b0a2ce859d3884252705e9ac7c93c98616bb238"
+      },
+      "artifacts": [
+        {
+          "backend": "cpu",
+          "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/llama-b10442-bin-win-cpu-x64.zip",
+          "fileName": "llama-b10442-bin-win-cpu-x64.zip",
+          "size": 18477132,
+          "sha256": "67a5da01b254be88294bdb477f481b71bb482b838e8d7da013eef8b20a0cfa24"
+        },
+        {
+          "backend": "vulkan",
+          "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/llama-b10442-bin-win-vulkan-x64.zip",
+          "fileName": "llama-b10442-bin-win-vulkan-x64.zip",
+          "size": 34819616,
+          "sha256": "5cd520d44276a9233c2f87cd2aeabbc26745ef92f92bbf43123feed694aab4b6"
+        }
+      ],
+      "discoveryAdapter": "digillm-engine-windows",
+      "installAdapter": "official-portable-composite",
+      "configureAdapter": "lumii-digillm-engine",
+      "healthAdapter": "digillm-engine",
+      "uninstallPolicy": "managed-root-only",
+      "legacyV2": {
+        "packageId": "digillm-engine",
+        "acceptedUntilV3Cutover": true,
+        "newV3ClientsMayConsume": false
+      }
+    },
+    {
+      "id": "go",
+      "capability": "go-toolchain",
+      "productTier": "optional",
+      "required": false,
+      "requiresUserConfirmation": true,
+      "sourceStrategy": "official-dynamic",
+      "ownershipPolicy": "official-managed",
+      "license": {
+        "id": "BSD-3-Clause",
+        "url": "https://go.dev/LICENSE"
+      },
+      "upgradePolicy": "resolve-official-stable-then-pin-receipt",
+      "versionPolicy": "official-stable",
+      "platform": "windows",
+      "architecture": "x64",
+      "allowedHosts": [
+        "go.dev",
+        "dl.google.com"
+      ],
+      "officialPage": "https://go.dev/dl/",
+      "resolver": {
+        "url": "https://go.dev/dl/?mode=json",
+        "adapter": "go-official-stable",
+        "requiresArtifactSize": true,
+        "requiresArtifactSha256": true
+      },
+      "discoveryAdapter": "go-windows",
+      "installAdapter": "official-portable",
+      "configureAdapter": "lumii-go",
+      "healthAdapter": "go-toolchain",
+      "uninstallPolicy": "managed-install-only-otherwise-detach",
+      "legacyV2": {
+        "dynamicOfficialProvider": true,
+        "acceptedUntilV3Cutover": true,
+        "newV3ClientsMayConsume": true
+      }
+    },
+    {
+      "id": "powershell",
+      "capability": "powershell-runtime",
+      "productTier": "optional",
+      "required": false,
+      "requiresUserConfirmation": true,
+      "sourceStrategy": "official-portable",
+      "ownershipPolicy": "reuse-or-official-managed",
+      "license": {
+        "id": "MIT",
+        "url": "https://github.com/PowerShell/PowerShell/blob/v7.6.4/LICENSE.txt"
+      },
+      "upgradePolicy": "pinned-manual-catalog-revision",
+      "version": "7.6.4",
+      "platform": "windows",
+      "architecture": "x64",
+      "allowedHosts": [
+        "github.com",
+        "release-assets.githubusercontent.com"
+      ],
+      "officialPage": "https://github.com/PowerShell/PowerShell/releases/tag/v7.6.4",
+      "artifact": {
+        "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.4/PowerShell-7.6.4-win-x64.zip",
+        "fileName": "PowerShell-7.6.4-win-x64.zip",
+        "size": 116979293,
+        "sha256": "80832551c52809301e6071c8bac977beb5a2f1ec953eb4db9f94deb953333793"
+      },
+      "discoveryAdapter": "powershell-windows",
+      "installAdapter": "official-portable",
+      "configureAdapter": "lumii-powershell",
+      "healthAdapter": "powershell-runtime",
+      "uninstallPolicy": "managed-install-only-otherwise-detach",
+      "legacyV2": {
+        "packageId": "powershell",
+        "acceptedUntilV3Cutover": true,
+        "newV3ClientsMayConsume": false
+      }
+    },
+    {
+      "id": "git",
+      "capability": "git-toolchain",
+      "productTier": "optional",
+      "required": false,
+      "requiresUserConfirmation": true,
+      "sourceStrategy": "official-portable",
+      "ownershipPolicy": "reuse-or-official-managed",
+      "license": {
+        "id": "GPL-2.0-only-and-third-party-notices",
+        "url": "https://github.com/git-for-windows/git/blob/v2.55.0.windows.4/COPYING"
+      },
+      "upgradePolicy": "pinned-manual-catalog-revision",
+      "version": "2.55.0.4",
+      "platform": "windows",
+      "architecture": "x64",
+      "allowedHosts": [
+        "github.com",
+        "release-assets.githubusercontent.com"
+      ],
+      "officialPage": "https://github.com/git-for-windows/git/releases/tag/v2.55.0.windows.4",
+      "artifact": {
+        "url": "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.4/MinGit-2.55.0.4-64-bit.zip",
+        "fileName": "MinGit-2.55.0.4-64-bit.zip",
+        "size": 38792847,
+        "sha256": "4e03f94c2ffbf70be337e005cee02661c732dbfc81031a078bda9299b9a7d644"
+      },
+      "discoveryAdapter": "git-windows",
+      "installAdapter": "official-portable",
+      "configureAdapter": "lumii-git",
+      "healthAdapter": "git-toolchain",
+      "uninstallPolicy": "managed-root-only",
+      "legacyV2": {
+        "packageId": "git",
+        "acceptedUntilV3Cutover": true,
+        "newV3ClientsMayConsume": false
+      }
+    },
+    {
+      "id": "python",
+      "capability": "python-runtime",
+      "productTier": "optional",
+      "required": false,
+      "requiresUserConfirmation": true,
+      "sourceStrategy": "official-installer",
+      "ownershipPolicy": "reuse-or-official-managed",
+      "license": {
+        "id": "PSF-2.0",
+        "url": "https://docs.python.org/3.13/license.html"
+      },
+      "upgradePolicy": "pinned-supported-windows-patch-manual-revision",
+      "version": "3.13.14",
+      "platform": "windows",
+      "architecture": "x64",
+      "allowedHosts": [
+        "www.python.org"
+      ],
+      "officialPage": "https://www.python.org/downloads/release/python-31314/",
+      "artifact": {
+        "url": "https://www.python.org/ftp/python/3.13.14/python-3.13.14-amd64.exe",
+        "fileName": "python-3.13.14-amd64.exe",
+        "size": 29225624,
+        "sha256": "c54d9b9bbb8a36e6489363ddd01139707fd781d72f1f9e90c7ec65d0061368e0"
+      },
+      "signature": {
+        "required": true,
+        "expectedPublisher": "Python Software Foundation"
+      },
+      "installerRecipe": {
+        "installAllUsers": false,
+        "includeLauncher": false,
+        "includePip": true,
+        "prependPath": false,
+        "targetDirPolicy": "lumii-managed-user-root",
+        "quiet": true
+      },
+      "migration": {
+        "legacyActualVersion": "3.12.13",
+        "legacyCatalogVersion": "3.12.13",
+        "samePatchOfficialWindowsInstallerAvailable": false,
+        "requiresRuntimeUpgrade": true
+      },
+      "discoveryAdapter": "python-windows",
+      "installAdapter": "official-installer",
+      "configureAdapter": "lumii-python",
+      "healthAdapter": "python-runtime",
+      "uninstallPolicy": "managed-install-only",
+      "legacyV2": {
+        "packageId": "python",
+        "acceptedUntilV3Cutover": true,
+        "newV3ClientsMayConsume": false
+      }
+    },
+    {
+      "id": "ripgrep",
+      "capability": "text-search-tool",
+      "productTier": "optional",
+      "required": false,
+      "requiresUserConfirmation": true,
+      "sourceStrategy": "official-portable",
+      "ownershipPolicy": "reuse-or-official-managed",
+      "license": {
+        "id": "MIT-OR-Unlicense",
+        "url": "https://github.com/BurntSushi/ripgrep/tree/15.2.0#license"
+      },
+      "upgradePolicy": "pinned-manual-catalog-revision",
+      "version": "15.2.0",
+      "platform": "windows",
+      "architecture": "x64",
+      "allowedHosts": [
+        "github.com",
+        "release-assets.githubusercontent.com"
+      ],
+      "officialPage": "https://github.com/BurntSushi/ripgrep/releases/tag/15.2.0",
+      "artifact": {
+        "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-x86_64-pc-windows-msvc.zip",
+        "fileName": "ripgrep-15.2.0-x86_64-pc-windows-msvc.zip",
+        "size": 1789611,
+        "sha256": "71b2fef860abe467217a538ff31de02f5258807c0129f771846f87bd029aafc5"
+      },
+      "discoveryAdapter": "ripgrep-windows",
+      "installAdapter": "official-portable",
+      "configureAdapter": "lumii-ripgrep",
+      "healthAdapter": "ripgrep-tool",
+      "uninstallPolicy": "managed-root-only",
+      "legacyV2": {
+        "packageId": "ripgrep",
+        "acceptedUntilV3Cutover": true,
+        "newV3ClientsMayConsume": false
+      }
+    },
+    {
+      "id": "codex",
+      "capability": "codex-agent-tools",
+      "productTier": "optional",
+      "required": false,
+      "requiresUserConfirmation": true,
+      "sourceStrategy": "official-package-composite",
+      "ownershipPolicy": "official-managed",
+      "license": {
+        "id": "Apache-2.0",
+        "url": "https://github.com/openai/codex/blob/rust-v0.145.0/LICENSE"
+      },
+      "upgradePolicy": "pinned-npm-version-and-integrity-manual-revision",
+      "version": "0.145.0",
+      "platform": "windows",
+      "architecture": "x64",
+      "allowedHosts": [
+        "www.npmjs.com",
+        "registry.npmjs.org"
+      ],
+      "officialPage": "https://www.npmjs.com/package/@openai/codex/v/0.145.0",
+      "artifacts": [
+        {
+          "role": "cli-wrapper",
+          "url": "https://registry.npmjs.org/@openai/codex/-/codex-0.145.0.tgz",
+          "fileName": "codex-0.145.0.tgz",
+          "size": 4311,
+          "sha256": "416399796cac371d1a033b17f34b08ba9b25c8f298a5b9d00e10f72c3b128c8d",
+          "integrity": "sha512-/PSPSFujjjmiyVFvG2yu/grOFhsWdokTH8t2KGWhXSo/M5n/dIDsnbsnO82/7bLtIoDuzQf7ATBUMWqPWQINlQ=="
+        },
+        {
+          "role": "win32-x64-runtime",
+          "url": "https://registry.npmjs.org/@openai/codex/-/codex-0.145.0-win32-x64.tgz",
+          "fileName": "codex-0.145.0-win32-x64.tgz",
+          "size": 150852388,
+          "sha256": "ea7b212e34d8798bb3d90b8ee9986c153aa2bbcdb15afda61027dc530d8c285b",
+          "integrity": "sha512-u0h9lk094CaXRSqE34SBW2dRaQTPa6fASXqehczWH9QdsU62mBsiAgAdp6tCG4i+YzPmmhjD8FdXNnYGNmwuMg=="
+        }
+      ],
+      "packageSecurity": {
+        "npmSignaturesRequired": true,
+        "npmProvenanceRequired": true
+      },
+      "discoveryAdapter": "codex-windows",
+      "installAdapter": "official-package-composite",
+      "configureAdapter": "lumii-codex",
+      "healthAdapter": "codex-runtime",
+      "uninstallPolicy": "managed-root-only",
+      "legacyV2": {
+        "packageId": "codex",
+        "acceptedUntilV3Cutover": true,
+        "newV3ClientsMayConsume": false
+      }
+    },
+    {
+      "id": "playwright-runtime",
+      "capability": "browser-media-runtime",
+      "productTier": "optional",
+      "required": false,
+      "requiresUserConfirmation": true,
+      "sourceStrategy": "official-vendor-composite",
+      "ownershipPolicy": "official-managed",
+      "license": {
+        "id": "Composite",
+        "url": "https://github.com/microsoft/playwright/blob/v1.61.1/LICENSE",
+        "policy": "Playwright is Apache-2.0; preserve and expose the Chromium, Chrome for Testing, FFmpeg and Winldd notices shipped by each official artifact."
+      },
+      "upgradePolicy": "pinned-playwright-version-browser-manifest-and-artifact-set",
+      "version": "1.61.1",
+      "platform": "windows",
+      "architecture": "x64",
+      "allowedHosts": [
+        "playwright.dev",
+        "cdn.playwright.dev",
+        "playwright.download.prss.microsoft.com",
+        "storage.googleapis.com"
+      ],
+      "officialPage": "https://playwright.dev/docs/browsers",
+      "resolver": {
+        "package": "playwright-core",
+        "packageVersion": "1.61.1",
+        "manifest": "browsers.json",
+        "adapter": "playwright-official-runtime",
+        "requiresArtifactSize": true,
+        "requiresArtifactSha256": true
+      },
+      "artifacts": [
+        {
+          "role": "chromium",
+          "upstreamVersion": "149.0.7827.55",
+          "revision": "1228",
+          "url": "https://cdn.playwright.dev/builds/cft/149.0.7827.55/win64/chrome-win64.zip",
+          "resolvedUrl": "https://storage.googleapis.com/chrome-for-testing-public/149.0.7827.55/win64/chrome-win64.zip",
+          "fileName": "chrome-win64.zip",
+          "size": 192511857,
+          "sha256": "ebc0c2b75e2ea98151a7f18ff47037bfcbab44a8660e79b9ffa6520f9b7607ab"
+        },
+        {
+          "role": "chromium-headless-shell",
+          "upstreamVersion": "149.0.7827.55",
+          "revision": "1228",
+          "url": "https://cdn.playwright.dev/builds/cft/149.0.7827.55/win64/chrome-headless-shell-win64.zip",
+          "resolvedUrl": "https://storage.googleapis.com/chrome-for-testing-public/149.0.7827.55/win64/chrome-headless-shell-win64.zip",
+          "fileName": "chrome-headless-shell-win64.zip",
+          "size": 119099822,
+          "sha256": "5cfda0c763aa6a867ce2efad0c467e3220e9c5c01c4cba02fd57afe49ede5457"
+        },
+        {
+          "role": "ffmpeg",
+          "revision": "1011",
+          "url": "https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-win64.zip",
+          "resolvedUrl": "https://playwright.download.prss.microsoft.com/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-win64.zip",
+          "fileName": "ffmpeg-win64.zip",
+          "size": 1411741,
+          "sha256": "8d08827c019ad36e7b9d49d3648447d884534cb2acf200e71c715f6dd834cc50"
+        },
+        {
+          "role": "winldd",
+          "revision": "1007",
+          "url": "https://cdn.playwright.dev/dbazure/download/playwright/builds/winldd/1007/winldd-win64.zip",
+          "resolvedUrl": "https://playwright.download.prss.microsoft.com/dbazure/download/playwright/builds/winldd/1007/winldd-win64.zip",
+          "fileName": "winldd-win64.zip",
+          "size": 128684,
+          "sha256": "0069f0d11d4ad6df068a068c003d22fe7dbec192a47bba64b2e115e9c8ce41d8"
+        }
+      ],
+      "discoveryAdapter": "playwright-runtime-windows",
+      "installAdapter": "official-vendor-composite",
+      "configureAdapter": "lumii-playwright-runtime",
+      "healthAdapter": "playwright-chromium-ffmpeg",
+      "uninstallPolicy": "managed-root-only",
+      "legacyV2": {
+        "packageIds": [
+          "chromium",
+          "ffmpeg"
+        ],
+        "acceptedUntilV3Cutover": true,
+        "newV3ClientsMayConsume": false
+      }
+    }
+  ],
+  "pendingSourceAudits": []
+}

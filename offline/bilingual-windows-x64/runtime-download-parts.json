@@ -1,0 +1,74 @@
+[
+  {
+    "url": null,
+    "fileName": "kbrain-library-windows-x64-e54c16f1504c07d8.zip",
+    "sha256": "e54c16f1504c07d81001e297380e86661fdd552e30890f7304c1b43b9771501a",
+    "size": 34495895,
+    "parts": [
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/kbrain-library-windows-x64-e54c16f1504c07d8.zip.part16m0001",
+        "fileName": "kbrain-library-windows-x64-e54c16f1504c07d8.zip.part16m0001",
+        "sha256": "98f9037accf690e6a78444534517a93526b103ab216b6daf4ac929acb2c2ef75",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/kbrain-library-windows-x64-e54c16f1504c07d8.zip.part16m0002",
+        "fileName": "kbrain-library-windows-x64-e54c16f1504c07d8.zip.part16m0002",
+        "sha256": "2654eeb6156859fab271acb6dd4bdd19797f6b167ec58b7f72056d725f01d609",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/kbrain-library-windows-x64-e54c16f1504c07d8.zip.part16m0003",
+        "fileName": "kbrain-library-windows-x64-e54c16f1504c07d8.zip.part16m0003",
+        "sha256": "7b84d70345fed7af7242da29e7550df95c25f563e60c296eba85f30010967357",
+        "size": 941463
+      }
+    ]
+  },
+  {
+    "url": null,
+    "fileName": "llama-b10442-bin-win-cpu-x64.zip",
+    "sha256": "67a5da01b254be88294bdb477f481b71bb482b838e8d7da013eef8b20a0cfa24",
+    "size": 18477132,
+    "parts": [
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/llama-b10442-bin-win-cpu-x64.zip.part16m0001",
+        "fileName": "llama-b10442-bin-win-cpu-x64.zip.part16m0001",
+        "sha256": "1d548499dc23368ecc3fc28b271788f9f3b053d5df7cb739b73cce1be2696fe9",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/llama-b10442-bin-win-cpu-x64.zip.part16m0002",
+        "fileName": "llama-b10442-bin-win-cpu-x64.zip.part16m0002",
+        "sha256": "17601c09189fc454c936d34b01ab0cbe24653291a14888e39f8f1f5527aed39c",
+        "size": 1699916
+      }
+    ]
+  },
+  {
+    "url": null,
+    "fileName": "llama-b10442-bin-win-vulkan-x64.zip",
+    "sha256": "5cd520d44276a9233c2f87cd2aeabbc26745ef92f92bbf43123feed694aab4b6",
+    "size": 34819616,
+    "parts": [
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/llama-b10442-bin-win-vulkan-x64.zip.part16m0001",
+        "fileName": "llama-b10442-bin-win-vulkan-x64.zip.part16m0001",
+        "sha256": "1bfc765506679200e07e5caf16ef61384a6b2db890b3a712c5a989805298ed44",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/llama-b10442-bin-win-vulkan-x64.zip.part16m0002",
+        "fileName": "llama-b10442-bin-win-vulkan-x64.zip.part16m0002",
+        "sha256": "d6b3202004fa2d43a4e77aef9a8ba10e45f199cb6fb390836aa0327888564029",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/llama-b10442-bin-win-vulkan-x64.zip.part16m0003",
+        "fileName": "llama-b10442-bin-win-vulkan-x64.zip.part16m0003",
+        "sha256": "a4079be49f003d4f610629c359111a37dc0a5ec144823365a31c4e483a6f3b23",
+        "size": 1265184
+      }
+    ]
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "catalogRevision": 5,
+  "edition": "bilingual",
+  "platform": "windows",
+  "architecture": "x64",
+  "components": [
+    {
+      "id": "cua-driver",
+      "version": "0.19.2",
+      "name": "Computer Use Driver",
+      "description": "LUMII-built local Windows computer-use automation driver.",
+      "kind": "tool",
+      "required": false,
+      "defaultInstalled": false,
+      "installOrder": 420,
+      "dependencies": [],
+      "configurationKind": "computer-use-node",
+      "archive": {
+        "url": null,
+        "fileName": "lumii-component-cua-driver-bilingual-windows-x64-cab38c71dfbddcc4.zip",
+        "sha256": "cab38c71dfbddcc435435133353fab79a7c6e11a772d1a9ecfba6b3e0c8322c6",
+        "size": 17154612,
+        "parts": [
+          {
+            "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-component-cua-driver-bilingual-windows-x64-cab38c71dfbddcc4.zip.part16m0001",
+            "fileName": "lumii-component-cua-driver-bilingual-windows-x64-cab38c71dfbddcc4.zip.part16m0001",
+            "sha256": "5562a717ec23f079b15a82af6690e6c4e18e5beb629c67d7d249e4314ea7bcef",
+            "size": 16777216
+          },
+          {
+            "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-component-cua-driver-bilingual-windows-x64-cab38c71dfbddcc4.zip.part16m0002",
+            "fileName": "lumii-component-cua-driver-bilingual-windows-x64-cab38c71dfbddcc4.zip.part16m0002",
+            "sha256": "df305946864d535ed6e2728918d414f91c9b9191cb8edd3503cdd1ff9bd091a3",
+            "size": 377396
+          }
+        ]
+      }
+    },
+    {
+      "id": "lumiipdf",
+      "version": "0.3.0-lumii.1",
+      "name": "LUMIIPDF Engine",
+      "description": "LUMII-built local PDF text extraction and rendering engine.",
+      "kind": "tool",
+      "required": false,
+      "defaultInstalled": false,
+      "installOrder": 440,
+      "dependencies": [],
+      "configurationKind": "none",
+      "archive": {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-component-lumiipdf-bilingual-windows-x64-fd6a8702b3f4e096.zip",
+        "fileName": "lumii-component-lumiipdf-bilingual-windows-x64-fd6a8702b3f4e096.zip",
+        "sha256": "fd6a8702b3f4e0968f8d1dc2930ebf8efb49fc6e9b9668a74abdac82e7c62b3a",
+        "size": 2117096,
+        "parts": []
+      }
+    }
+  ]
+}
