@@ -14,8 +14,8 @@
   "installer": {
     "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-bilingual-windows-x64-setup-1.2.5.exe",
     "fileName": "lumii-bilingual-windows-x64-setup-1.2.5.exe",
-    "sha256": "724618aefe577904518f5b210ff1d1a7bf8b27d2dc5bd36633d2aa1e0bcb0222",
-    "size": 14478833
+    "sha256": "492d2ab5f04b9f1e88206ed7db179d583ef8576c41f527d28bc49dc51819b2bb",
+    "size": 14486584
   },
   "bootstrapManifest": {
     "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/runtime-bootstrap-manifest-1.2.5.json",
@@ -25,7 +25,7 @@
   "layers": {
     "bootstrap": {
       "version": "1.2.5",
-      "sha256": "724618aefe577904518f5b210ff1d1a7bf8b27d2dc5bd36633d2aa1e0bcb0222"
+      "sha256": "492d2ab5f04b9f1e88206ed7db179d583ef8576c41f527d28bc49dc51819b2bb"
     },
     "foundation": {
       "compatibilityUrl": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-windows-compatibility-4b605f03ed72886f78d36450bdd2105d371a155f4d0ab0d887f2fa72e9cbd48d.json",

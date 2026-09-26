@@ -65,8 +65,8 @@
       "manifestFileName": "lumii-windows-update-1.2.5.json",
       "installerUrl": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-bilingual-windows-x64-setup-1.2.5.exe",
       "installerFileName": "lumii-bilingual-windows-x64-setup-1.2.5.exe",
-      "installerSha256": "724618aefe577904518f5b210ff1d1a7bf8b27d2dc5bd36633d2aa1e0bcb0222",
-      "installerSize": 14478833
+      "installerSha256": "492d2ab5f04b9f1e88206ed7db179d583ef8576c41f527d28bc49dc51819b2bb",
+      "installerSize": 14486584
     }
   ]
 }
