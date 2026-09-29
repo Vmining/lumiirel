@@ -14,8 +14,8 @@
   "installer": {
     "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-bilingual-windows-x64-setup-1.2.5.exe",
     "fileName": "lumii-bilingual-windows-x64-setup-1.2.5.exe",
-    "sha256": "4ad23d4479a25f02955b0d018cad919bcb389b87956c7246366ffa799b066511",
-    "size": 15120012
+    "sha256": "7d2d0d465e71c66071df7c42f05b2a63fdb6415909426cedf49df29475dc3d95",
+    "size": 15181363
   },
   "bootstrapManifest": {
     "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/runtime-bootstrap-manifest-1.2.5.json",
@@ -25,21 +25,21 @@
   "layers": {
     "bootstrap": {
       "version": "1.2.5",
-      "sha256": "4ad23d4479a25f02955b0d018cad919bcb389b87956c7246366ffa799b066511"
+      "sha256": "7d2d0d465e71c66071df7c42f05b2a63fdb6415909426cedf49df29475dc3d95"
     },
     "foundation": {
       "compatibilityUrl": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-windows-compatibility-4b605f03ed72886f78d36450bdd2105d371a155f4d0ab0d887f2fa72e9cbd48d.json",
       "revision": 6
     },
     "core": {
-      "runtimeId": "676525954d09628b94061e23bdee1a279c37960519822ddf98ad2a1c1d3a3af2",
-      "sha256": "676525954d09628b94061e23bdee1a279c37960519822ddf98ad2a1c1d3a3af2",
-      "size": 336996061
+      "runtimeId": "763f6f37ad48beb3c7fde080b57dfadfb602c47cf2b6b57096fca79f19b35749",
+      "sha256": "763f6f37ad48beb3c7fde080b57dfadfb602c47cf2b6b57096fca79f19b35749",
+      "size": 336998012
     },
     "resources": {
-      "resourceId": "0b641b725366b14555d7180fc8a4f8e47f14bcfbebcb6c74fb874de6550aaf03",
-      "sha256": "0b641b725366b14555d7180fc8a4f8e47f14bcfbebcb6c74fb874de6550aaf03",
-      "size": 333572810
+      "resourceId": "e27293e6f5852b026558bebf0315840bb7d4c8139aa1067d35f67b5578dcfa2c",
+      "sha256": "e27293e6f5852b026558bebf0315840bb7d4c8139aa1067d35f67b5578dcfa2c",
+      "size": 333574203
     },
     "activation": {
       "version": "1.2.5"
