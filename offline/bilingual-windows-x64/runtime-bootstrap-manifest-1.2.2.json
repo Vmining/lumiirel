@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 5,
+  "releaseVersion": "1.2.2",
+  "runtimeId": "9e77398422a018a59124f25a4064bcbad4217b865bc992c311ad76ecb18fbf45",
+  "edition": "bilingual",
+  "architecture": "x64",
+  "core": {
+    "url": null,
+    "fileName": "lumii-runtime-core-bilingual-windows-x64-9e77398422a018a5.zip",
+    "sha256": "9e77398422a018a59124f25a4064bcbad4217b865bc992c311ad76ecb18fbf45",
+    "size": 90356508,
+    "parts": [
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-9e77398422a018a5.zip.part0001",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-9e77398422a018a5.zip.part0001",
+        "sha256": "40783b1d5bd607dbea4e26c0353011a847c82b93438d9d9b7d4cb181aa5b8ce1",
+        "size": 50331648
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-9e77398422a018a5.zip.part0002",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-9e77398422a018a5.zip.part0002",
+        "sha256": "7cfde369754d57b53500849bc8daf441fe78961ca7f4b0c0bb44b99317a57f0f",
+        "size": 40024860
+      }
+    ]
+  },
+  "resources": {
+    "url": null,
+    "fileName": "lumii-resources-bilingual-windows-x64-a0e0c331ea16e27e.zip",
+    "sha256": "a0e0c331ea16e27ebbdf5f5d6e545fdd0cf1211d556363b0f8980e18f7a78afc",
+    "size": 90404250,
+    "parts": [
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-a0e0c331ea16e27e.zip.part0001",
+        "fileName": "lumii-resources-bilingual-windows-x64-a0e0c331ea16e27e.zip.part0001",
+        "sha256": "47fde2e9f68b222f21d743c08cecd904858ae3c0cb9b021584086a3ea2201271",
+        "size": 50331648
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-a0e0c331ea16e27e.zip.part0002",
+        "fileName": "lumii-resources-bilingual-windows-x64-a0e0c331ea16e27e.zip.part0002",
+        "sha256": "fd80da7ecf8b8995f5ceb8b6e8739dcee369fd3115145754d354dbc9620eb312",
+        "size": 40072602
+      }
+    ]
+  },
+  "componentCatalog": {
+    "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-component-catalog-v2-bilingual.json",
+    "fileName": "lumii-component-catalog.json",
+    "sha256": "c2b95383570d5ebea56a6234cd1a639a6978a64c8c31c3f8afbb62bbb64e23d3",
+    "size": 2540
+  },
+  "providerCatalog": {
+    "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resource-provider-v1.json",
+    "fileName": "lumii-resource-provider-v1.json",
+    "revision": 4
+  },
+  "compatibility": {
+    "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-windows-compatibility-v1.json",
+    "fileName": "lumii-windows-compatibility-v1.json"
+  },
+  "managedApplications": [
+    {
+      "applicationId": "kbrain",
+      "publisherId": "zera-ai-os",
+      "payloadId": "engine",
+      "releaseId": "kbrain-engine-0.1.0.dev0-v4-20260910d",
+      "version": "0.1.0.dev0",
+      "archive": {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/kbrain-engine-windows-x64.zip",
+        "fileName": "kbrain-engine-windows-x64.zip",
+        "sha256": "bff2ae66b8f9e45f85d5ad41ef7293205ba9d97bbbc0a9d4cd13e6f9c513d20f",
+        "size": 17741303,
+        "parts": []
+      },
+      "manifestSha256": "6be7acb3a50470760e06096f5dfd5a717cd10a2229fe7fa6023745d46b134795",
+      "manifestSchema": "kbrain.engine.local-artifact.v1",
+      "entrypoint": "kbrain-engine.exe",
+      "arguments": [
+        "--stdio"
+      ],
+      "protocolVersion": 4,
+      "bootstrapVersion": 1
+    }
+  ]
+}

@@ -18,21 +18,21 @@
       "configurationKind": "computer-use-node",
       "archive": {
         "url": null,
-        "fileName": "lumii-component-cua-driver-bilingual-windows-x64-cab38c71dfbddcc4.zip",
-        "sha256": "cab38c71dfbddcc435435133353fab79a7c6e11a772d1a9ecfba6b3e0c8322c6",
-        "size": 17154612,
+        "fileName": "lumii-component-cua-driver-bilingual-windows-x64-eed62c68efdf25f6.zip",
+        "sha256": "eed62c68efdf25f69cc0005ab1b585a199ff07d0879548c23b6321ada4d80a2c",
+        "size": 17154627,
         "parts": [
           {
-            "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-component-cua-driver-bilingual-windows-x64-cab38c71dfbddcc4.zip.part16m0001",
-            "fileName": "lumii-component-cua-driver-bilingual-windows-x64-cab38c71dfbddcc4.zip.part16m0001",
-            "sha256": "5562a717ec23f079b15a82af6690e6c4e18e5beb629c67d7d249e4314ea7bcef",
+            "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-component-cua-driver-bilingual-windows-x64-eed62c68efdf25f6.zip.part16m0001",
+            "fileName": "lumii-component-cua-driver-bilingual-windows-x64-eed62c68efdf25f6.zip.part16m0001",
+            "sha256": "2366c0898204340385dbf57c56de97bfff25c990f93d05d8628d69e78c63c1d8",
             "size": 16777216
           },
           {
-            "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-component-cua-driver-bilingual-windows-x64-cab38c71dfbddcc4.zip.part16m0002",
-            "fileName": "lumii-component-cua-driver-bilingual-windows-x64-cab38c71dfbddcc4.zip.part16m0002",
-            "sha256": "df305946864d535ed6e2728918d414f91c9b9191cb8edd3503cdd1ff9bd091a3",
-            "size": 377396
+            "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-component-cua-driver-bilingual-windows-x64-eed62c68efdf25f6.zip.part16m0002",
+            "fileName": "lumii-component-cua-driver-bilingual-windows-x64-eed62c68efdf25f6.zip.part16m0002",
+            "sha256": "2014e745ac627cba8d9847212e876f127d3bdbdd8cb1d86897e2efe007395113",
+            "size": 377411
           }
         ]
       }

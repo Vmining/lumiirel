@@ -1,27 +1,21 @@
 [
   {
     "url": null,
-    "fileName": "kbrain-library-windows-x64-e54c16f1504c07d8.zip",
-    "sha256": "e54c16f1504c07d81001e297380e86661fdd552e30890f7304c1b43b9771501a",
-    "size": 34495895,
+    "fileName": "kbrain-library-windows-x64-4ba80dba4c975e80.zip",
+    "sha256": "4ba80dba4c975e8074677654fb6153bb4d895a3ed5830837eb4744fe571e2fe1",
+    "size": 31123546,
     "parts": [
       {
-        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/kbrain-library-windows-x64-e54c16f1504c07d8.zip.part16m0001",
-        "fileName": "kbrain-library-windows-x64-e54c16f1504c07d8.zip.part16m0001",
-        "sha256": "98f9037accf690e6a78444534517a93526b103ab216b6daf4ac929acb2c2ef75",
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/kbrain-library-windows-x64-4ba80dba4c975e80.zip.part16m0001",
+        "fileName": "kbrain-library-windows-x64-4ba80dba4c975e80.zip.part16m0001",
+        "sha256": "a25f49f3b434fbc26423368ac98ca64e4c4c49dbef53561860de52ad69db1705",
         "size": 16777216
       },
       {
-        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/kbrain-library-windows-x64-e54c16f1504c07d8.zip.part16m0002",
-        "fileName": "kbrain-library-windows-x64-e54c16f1504c07d8.zip.part16m0002",
-        "sha256": "2654eeb6156859fab271acb6dd4bdd19797f6b167ec58b7f72056d725f01d609",
-        "size": 16777216
-      },
-      {
-        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/kbrain-library-windows-x64-e54c16f1504c07d8.zip.part16m0003",
-        "fileName": "kbrain-library-windows-x64-e54c16f1504c07d8.zip.part16m0003",
-        "sha256": "7b84d70345fed7af7242da29e7550df95c25f563e60c296eba85f30010967357",
-        "size": 941463
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/kbrain-library-windows-x64-4ba80dba4c975e80.zip.part16m0002",
+        "fileName": "kbrain-library-windows-x64-4ba80dba4c975e80.zip.part16m0002",
+        "sha256": "914a976c3b6812f30a7d9fd5a88159da486db4c1f3285e2736a1b37aa6b0a51c",
+        "size": 14346330
       }
     ]
   },
