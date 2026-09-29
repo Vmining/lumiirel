@@ -4,59 +4,57 @@
   "channel": "stable",
   "releaseLine": "1.2",
   "productProfile": "developer-platform",
-  "baselineVersion": "1.2.1",
-  "legacyVersions": [],
-  "retiredReleases": [],
-  "firstQueuedVersion": "1.2.1",
+  "baselineVersion": "1.2.5",
+  "legacyVersions": [
+    "1.2.1",
+    "1.2.2",
+    "1.2.3",
+    "1.2.4"
+  ],
+  "retiredReleases": [
+    {
+      "productVersion": "1.2.1",
+      "displayVersion": "LUMII_V1.2.1",
+      "status": "retired",
+      "artifactAvailability": "retained",
+      "supersededBy": "1.2.5",
+      "retiredDate": "2026-09-29",
+      "reason": "Retired from the active update queue; 1.2.5 is the supported baseline."
+    },
+    {
+      "productVersion": "1.2.2",
+      "displayVersion": "LUMII_V1.2.2",
+      "status": "retired",
+      "artifactAvailability": "retained",
+      "supersededBy": "1.2.5",
+      "retiredDate": "2026-09-29",
+      "reason": "Retired from the active update queue; 1.2.5 is the supported baseline."
+    },
+    {
+      "productVersion": "1.2.3",
+      "displayVersion": "LUMII_V1.2.3",
+      "status": "retired",
+      "artifactAvailability": "retained",
+      "supersededBy": "1.2.5",
+      "retiredDate": "2026-09-29",
+      "reason": "Retired from the active update queue; 1.2.5 is the supported baseline."
+    },
+    {
+      "productVersion": "1.2.4",
+      "displayVersion": "LUMII_V1.2.4",
+      "status": "retired",
+      "artifactAvailability": "retained",
+      "supersededBy": "1.2.5",
+      "retiredDate": "2026-09-29",
+      "reason": "Retired from the active update queue; 1.2.5 is the supported baseline."
+    }
+  ],
+  "firstQueuedVersion": "1.2.5",
   "latestVersion": "1.2.5",
   "edition": "bilingual",
   "platform": "windows",
   "architecture": "x64",
   "releases": [
-    {
-      "productVersion": "1.2.1",
-      "displayVersion": "LUMII_V1.2.1",
-      "releaseDate": "2026-09-06",
-      "manifestUrl": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-windows-update-1.2.1.json",
-      "manifestFileName": "lumii-windows-update-1.2.1.json",
-      "installerUrl": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-bilingual-windows-x64-setup-1.2.1.exe",
-      "installerFileName": "lumii-bilingual-windows-x64-setup-1.2.1.exe",
-      "installerSha256": "b3740de7e5aaa6f628707856c2a45a3442cae097e75b5531715c7690a7e22f64",
-      "installerSize": 13048803
-    },
-    {
-      "productVersion": "1.2.2",
-      "displayVersion": "LUMII_V1.2.2",
-      "releaseDate": "2026-09-10",
-      "manifestUrl": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-windows-update-1.2.2.json",
-      "manifestFileName": "lumii-windows-update-1.2.2.json",
-      "installerUrl": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-bilingual-windows-x64-setup-1.2.2.exe",
-      "installerFileName": "lumii-bilingual-windows-x64-setup-1.2.2.exe",
-      "installerSha256": "d5e78bb2a861bdcdcd083ef69ff7b52f3827f7afecf929ee9f3ea60f50cbd6bb",
-      "installerSize": 13569454
-    },
-    {
-      "productVersion": "1.2.3",
-      "displayVersion": "LUMII_V1.2.3",
-      "releaseDate": "2026-09-15",
-      "manifestUrl": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-windows-update-1.2.3.json",
-      "manifestFileName": "lumii-windows-update-1.2.3.json",
-      "installerUrl": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-bilingual-windows-x64-setup-1.2.3.exe",
-      "installerFileName": "lumii-bilingual-windows-x64-setup-1.2.3.exe",
-      "installerSha256": "a38851093cd426cba6654cd156c9ca2099f9456d9a5e7e2346c96a3508ed657f",
-      "installerSize": 14201727
-    },
-    {
-      "productVersion": "1.2.4",
-      "displayVersion": "LUMII_V1.2.4",
-      "releaseDate": "2026-09-16",
-      "manifestUrl": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-windows-update-1.2.4.json",
-      "manifestFileName": "lumii-windows-update-1.2.4.json",
-      "installerUrl": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-bilingual-windows-x64-setup-1.2.4.exe",
-      "installerFileName": "lumii-bilingual-windows-x64-setup-1.2.4.exe",
-      "installerSha256": "4d7c697247050eac3d996074e6391767fab601de650d1e7992129699c2d6818f",
-      "installerSize": 14423842
-    },
     {
       "productVersion": "1.2.5",
       "displayVersion": "LUMII_V1.2.5",
@@ -65,8 +63,8 @@
       "manifestFileName": "lumii-windows-update-1.2.5.json",
       "installerUrl": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-bilingual-windows-x64-setup-1.2.5.exe",
       "installerFileName": "lumii-bilingual-windows-x64-setup-1.2.5.exe",
-      "installerSha256": "7a5e2bb8125d1581678c4e23c9e5c1b8cd55e6da9cef5ca4e1532ffb01d73bf1",
-      "installerSize": 15167650
+      "installerSha256": "4ad23d4479a25f02955b0d018cad919bcb389b87956c7246366ffa799b066511",
+      "installerSize": 15120012
     }
   ]
 }
