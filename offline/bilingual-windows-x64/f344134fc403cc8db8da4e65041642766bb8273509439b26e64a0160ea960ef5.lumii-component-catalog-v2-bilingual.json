@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 2,
+  "catalogRevision": 5,
+  "edition": "bilingual",
+  "platform": "windows",
+  "architecture": "x64",
+  "components": [
+    {
+      "id": "lumiipdf",
+      "version": "0.3.0-lumii.1",
+      "name": "LUMIIPDF Engine",
+      "description": "LUMII-built local PDF text extraction and rendering engine.",
+      "kind": "tool",
+      "required": false,
+      "defaultInstalled": false,
+      "installOrder": 440,
+      "dependencies": [],
+      "configurationKind": "none",
+      "archive": {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-component-lumiipdf-bilingual-windows-x64-fd6a8702b3f4e096.zip",
+        "fileName": "lumii-component-lumiipdf-bilingual-windows-x64-fd6a8702b3f4e096.zip",
+        "sha256": "fd6a8702b3f4e0968f8d1dc2930ebf8efb49fc6e9b9668a74abdac82e7c62b3a",
+        "size": 2117096,
+        "parts": []
+      }
+    }
+  ]
+}

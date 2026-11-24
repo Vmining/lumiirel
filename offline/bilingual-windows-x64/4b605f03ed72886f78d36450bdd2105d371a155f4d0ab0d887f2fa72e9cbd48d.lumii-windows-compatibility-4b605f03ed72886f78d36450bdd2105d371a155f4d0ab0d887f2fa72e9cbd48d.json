@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "contract": "lumii.windows.compatibility",
+  "revision": 1,
+  "activationState": "active",
+  "platform": "windows",
+  "architecture": "x64",
+  "versionDetection": {
+    "adapter": "windows-nt-numeric-version",
+    "preferredSource": "RtlGetVersion",
+    "fallbackSource": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+    "numericFields": ["major", "minor", "build", "ubr"],
+    "forbiddenSources": ["Caption", "ProductName", "DisplayVersion", "localizedVersionText"]
+  },
+  "supportedProducts": [
+    {
+      "id": "windows-10-22h2-x64",
+      "major": 10,
+      "minor": 0,
+      "buildMin": 19045,
+      "buildMax": 19045,
+      "architecture": "x64",
+      "supportPolicy": "LUMII compatibility support despite Microsoft consumer end-of-support",
+      "mandatoryAcceptanceLane": "win10-19045"
+    },
+    {
+      "id": "windows-11-x64",
+      "major": 10,
+      "minor": 0,
+      "buildMin": 22000,
+      "buildMax": null,
+      "architecture": "x64",
+      "supportPolicy": "Windows 11 baseline and current annual channel",
+      "mandatoryAcceptanceLanes": ["win11-22000", "win11-current"]
+    }
+  ],
+  "unsupported": [
+    {
+      "id": "windows-before-10-22h2",
+      "reason": "below numeric build 19045"
+    },
+    {
+      "id": "windows-arm64",
+      "reason": "requires an independent signed catalog and native payload set"
+    },
+    {
+      "id": "windows-x86",
+      "reason": "no x86 LUMII runtime or provider catalog"
+    },
+    {
+      "id": "windows-server",
+      "reason": "not part of the desktop product acceptance matrix"
+    }
+  ],
+  "requiredPlatformCapabilities": [
+    {
+      "id": "native-x64-process",
+      "discovery": "IsWow64Process2-or-environment",
+      "failureMode": "block-before-download"
+    },
+    {
+      "id": "tls-1.2-or-newer",
+      "discovery": "https-loopback-and-official-source-probe",
+      "failureMode": "recoverable-core-preparation-error"
+    },
+    {
+      "id": "webview2-evergreen",
+      "discovery": "registry-and-runnable-version",
+      "provisioning": "reuse-or-microsoft-official-bootstrapper",
+      "failureMode": "recoverable-core-preparation-error"
+    },
+    {
+      "id": "windows-powershell-5.1",
+      "discovery": "system32-absolute-path-and-version",
+      "usage": "bootstrap-only",
+      "failureMode": "block-with-repair-guidance"
+    }
+  ],
+  "pathPolicy": {
+    "unicodeRequired": true,
+    "spacesRequired": true,
+    "longPathRegistrySettingRequired": false,
+    "programDataAsciiFoundationRoot": true,
+    "commandLineSecretTransportAllowed": false
+  },
+  "localeMatrix": [
+    {
+      "id": "zh-cn-cjk",
+      "uiLanguage": "zh-CN",
+      "systemLocale": "zh-CN",
+      "profileExample": "C:\\Users\\测试 用户"
+    },
+    {
+      "id": "en-us-ascii",
+      "uiLanguage": "en-US",
+      "systemLocale": "en-US",
+      "profileExample": "C:\\Users\\Acceptance User"
+    },
+    {
+      "id": "ja-jp-cjk",
+      "uiLanguage": "ja-JP",
+      "systemLocale": "ja-JP",
+      "profileExample": "C:\\Users\\テスト ユーザー"
+    },
+    {
+      "id": "ko-kr-cjk",
+      "uiLanguage": "ko-KR",
+      "systemLocale": "ko-KR",
+      "profileExample": "C:\\Users\\테스트 사용자"
+    },
+    {
+      "id": "de-de-accented",
+      "uiLanguage": "de-DE",
+      "systemLocale": "de-DE",
+      "profileExample": "C:\\Users\\Prüfung Benutzer"
+    }
+  ],
+  "acceptanceLanes": [
+    {
+      "id": "win10-19045",
+      "product": "windows-10-22h2-x64",
+      "build": 19045,
+      "required": true,
+      "execution": "clean-vm",
+      "status": "required-not-yet-passed"
+    },
+    {
+      "id": "win11-22000",
+      "product": "windows-11-x64",
+      "build": 22000,
+      "required": true,
+      "execution": "clean-vm",
+      "status": "required-not-yet-passed"
+    },
+    {
+      "id": "win11-current",
+      "product": "windows-11-x64",
+      "buildMin": 26100,
+      "required": true,
+      "execution": "clean-vm-and-release-host",
+      "status": "required-not-yet-passed",
+      "latestObservedReleaseHost": {
+        "build": 26200,
+        "ubr": 9168,
+        "displayVersion": "25H2",
+        "uiLanguage": "zh-CN",
+        "observationDate": "2026-08-15",
+        "evidenceScope": "registry-and-culture-only-cim-access-denied"
+      }
+    }
+  ],
+  "requiredScenariosPerOsLane": [
+    "clean-core-install",
+    "existing-compatible-official-components",
+    "existing-incompatible-components-not-adopted",
+    "unicode-and-space-profile",
+    "standard-user-uac",
+    "offline-cancel-resume-retry",
+    "login-and-basic-workspace",
+    "post-login-progressive-sync",
+    "optional-provider-confirmation",
+    "upgrade-from-v2",
+    "uninstall-preserves-user-owned-software-and-data"
+  ],
+  "releaseGate": {
+    "allRequiredLanesMustPass": true,
+    "allLocaleCasesMustPassOnAtLeastOneWindows10AndOneWindows11Lane": true,
+    "publicArtifactHashAndInstallMustPass": true,
+    "serverPublishAllowedBeforePass": false
+  }
+}
