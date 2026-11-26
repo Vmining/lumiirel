@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "contract": "lumii.windows.update-channel",
+  "channel": "stable",
+  "releaseLine": "1.2",
+  "productProfile": "developer-platform",
+  "productVersion": "1.2.9",
+  "displayVersion": "LUMII_V1.2.9",
+  "releaseDate": "2026-11-16",
+  "runtimeVersion": "1.2.9",
+  "edition": "bilingual",
+  "platform": "windows",
+  "architecture": "x64",
+  "installer": {
+    "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-bilingual-windows-x64-setup-1.2.9.exe",
+    "fileName": "lumii-bilingual-windows-x64-setup-1.2.9.exe",
+    "sha256": "18bc82b61c02c1cbdd7aa28e8e99ab5870ec310d358211a5df09450ded818003",
+    "size": 11905938
+  },
+  "bootstrapManifest": {
+    "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/runtime-bootstrap-manifest-1.2.9.json",
+    "fileName": "runtime-bootstrap-manifest-1.2.9.json",
+    "schemaVersion": 5
+  },
+  "layers": {
+    "bootstrap": {
+      "version": "1.2.9",
+      "sha256": "18bc82b61c02c1cbdd7aa28e8e99ab5870ec310d358211a5df09450ded818003"
+    },
+    "foundation": {
+      "compatibilityUrl": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-windows-compatibility-4b605f03ed72886f78d36450bdd2105d371a155f4d0ab0d887f2fa72e9cbd48d.json",
+      "revision": 11
+    },
+    "core": {
+      "runtimeId": "be03bb62bd5a2df2155227e8a1738a4248b10beba68180749876552e625df5ae",
+      "sha256": "be03bb62bd5a2df2155227e8a1738a4248b10beba68180749876552e625df5ae",
+      "size": 541574108
+    },
+    "resources": {
+      "resourceId": "bccdb563f286df4060cb9f27cdd00565ba3bd07f160027453590e61dd71165ed",
+      "sha256": "bccdb563f286df4060cb9f27cdd00565ba3bd07f160027453590e61dd71165ed",
+      "size": 364428501
+    },
+    "activation": {
+      "version": "1.2.9"
+    }
+  }
+}
