@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 5,
+  "releaseVersion": "1.2.9",
+  "edition": "bilingual",
+  "architecture": "x64",
+  "managedApplications": [
+    {
+      "applicationId": "kbrain",
+      "publisherId": "zera-ai-os",
+      "payloadId": "engine",
+      "releaseId": "kbrain-library-0.1.0.dev0-v4-review-fixes-20261001",
+      "version": "0.1.0.dev0",
+      "archive": {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/kbrain-library-windows-x64-ec6464c397b4c410.zip",
+        "fileName": "kbrain-library-windows-x64-ec6464c397b4c410.zip",
+        "sha256": "ec6464c397b4c4106392d66092dedc23b36bcf76dadafd43c379e1ad52527fff",
+        "size": 26530496,
+        "parts": [
+          {
+            "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/kbrain-library-windows-x64-ec6464c397b4c410.zip.part16m0001",
+            "fileName": "kbrain-library-windows-x64-ec6464c397b4c410.zip.part16m0001",
+            "sha256": "649199864099afc58b4e9f05ec45304006eedf59fa5ee12dc0523d8196acd7e3",
+            "size": 16777216
+          },
+          {
+            "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/kbrain-library-windows-x64-ec6464c397b4c410.zip.part16m0002",
+            "fileName": "kbrain-library-windows-x64-ec6464c397b4c410.zip.part16m0002",
+            "sha256": "c7eae1c19d3f682077160991b648c9d9e23ce926ff853541deb960e3a78673e8",
+            "size": 9753280
+          }
+        ]
+      },
+      "manifestSha256": "71d55d2c31d57e10c64f2e238b134ff11af85dceb32502555fe2ff656062ad72",
+      "manifestSchema": "kbrain.engine.local-artifact.v2",
+      "entrypoint": "kbrain-engine.exe",
+      "arguments": [
+        "--parse-worker"
+      ],
+      "protocolVersion": 4,
+      "bootstrapVersion": 2
+    }
+  ],
+  "runtimeId": "3fc99af13a2a07ae2e999e050e6a096860303b366f6bf0d89796794be7c156d2",
+  "core": {
+    "url": null,
+    "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip",
+    "sha256": "3fc99af13a2a07ae2e999e050e6a096860303b366f6bf0d89796794be7c156d2",
+    "size": 541534190,
+    "parts": [
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0001",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0001",
+        "sha256": "631a43778c64582e21b74127c43b26182c8285f6244f65ce5677ba78f78afcd8",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0002",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0002",
+        "sha256": "6527e9df4de92184e754718667143016c792165d0094afef2e416b60db50cff2",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0003",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0003",
+        "sha256": "b5ed290acd661371ea7739f769333fad4222342c4817381575ce57299385b66c",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0004",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0004",
+        "sha256": "2790bcf6a73a013eef2ef706197580982987b03b7c2244b1d8f5309eea788df6",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0005",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0005",
+        "sha256": "56db7e32dc82b7ecfeaede285a235aefb4f7364a0f6e874b61f6ff6c444da3db",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0006",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0006",
+        "sha256": "0a2760bfe1187309e7af0e9ac148de6856aa880c573f10c7ccf9c0cc09af71d4",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0007",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0007",
+        "sha256": "640d598e37761539a5bd3c336c2d7294eb848e6d9e1a8f831197b42dc8af2105",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0008",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0008",
+        "sha256": "93d1c275eb4ba2570333a1b2689f0d25c093b3d0195b37644b6a292096e23dbe",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0009",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0009",
+        "sha256": "92542cc9fc568cea30377168574b19129860000f22c7c8aaf55cc36e7679f352",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0010",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0010",
+        "sha256": "6b82109e337465bafdbc5c986df1bbeee64bb630451b66dcf3381e128c468e98",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0011",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0011",
+        "sha256": "436653f9128322e172247f53b24f3389b9458fdbdda631b1b50ac6ad85c157ed",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0012",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0012",
+        "sha256": "988b22e9f77e75d27236595d110b3da76e18d3c4df985973e5c8bf50292ef6ca",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0013",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0013",
+        "sha256": "6730a9e9c960205c9a31fd97096259bda74764fb6501f4080b1447bd6d7d7f40",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0014",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0014",
+        "sha256": "e1e3dc607ef94b00d907cae749193ccb5a1499ef10e18fc2879e4bad0f0ab2e3",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0015",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0015",
+        "sha256": "36db0b80e3d6c0a347ef3749159bfe13eb1d45f0fb9ee3f53148ed4f9417be40",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0016",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0016",
+        "sha256": "1e1714bec0bb215fc73427cb68f7a90d688711925e75caba9a5f283fd2af9c54",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0017",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0017",
+        "sha256": "b02bedd341f944a94f23b53508facf04ec40e5680e1f50056a1361d8df5561cc",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0018",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0018",
+        "sha256": "1d63a88efb9d255b714fce7995878308f8c34abe4530320a86bddfa2ef42dd6f",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0019",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0019",
+        "sha256": "2c19a29183c5e64ae3af7d82b947016831942c5930c95de609c3901c97d06cdc",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0020",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0020",
+        "sha256": "d7096852bc0c0dc3516cf21aec45dee32dcc85f58f38ae1c0d92d3e08970e90a",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0021",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0021",
+        "sha256": "86c76c53baf2fcf3055a6176173594ac237cc2ea0979a65030f2c2990f5a8690",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0022",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0022",
+        "sha256": "f136bbac5db7f988ba691fef40190bec0bb20270da76d2b8936f770ef06abdfa",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0023",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0023",
+        "sha256": "dcc7b6a1a6301634e3b1d10df125b5069e6a8026f819d0202c1dbf4d622f9b32",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0024",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0024",
+        "sha256": "5d4d145bdbcf23267ae02206182c66332762b9a1840759ae4d6ddaaf89fe781c",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0025",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0025",
+        "sha256": "adfa2c98b584782f2cd60c5d6a7f05f455658c34cd0489c5662960c2cdefdf79",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0026",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0026",
+        "sha256": "90a17c89beaf1c74e8ff41c9a68809c540472a4f62dff8279c2653c9319e54b3",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0027",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0027",
+        "sha256": "8df866778f8aca0beb3d4fcf72ac917793bf5d3f40ebadb8a030f3771292eb7a",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0028",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0028",
+        "sha256": "2110a007b827df4248ece171d69061a3789268bf71234d9e6f47be9d388869ad",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0029",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0029",
+        "sha256": "6421216f5a5778a85e9eca39df437bbe67b016fd4658c70ca86a6c9f0b3149c9",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0030",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0030",
+        "sha256": "04e2a4be2ff2ad5071151d6bc42f7691f325453fadad616ffc04b3e639a157e1",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0031",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0031",
+        "sha256": "27282441eaf7cc8c3600d5010f94ce20d0e53f6f8dffb7505ca43f0158a308a9",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0032",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0032",
+        "sha256": "458627a0aecabdf78107822d52b232ccd4000ff4fa19c4c1b50f6d958189523d",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0033",
+        "fileName": "lumii-runtime-core-bilingual-windows-x64-3fc99af13a2a07ae.zip.part16m0033",
+        "sha256": "058c1ccddddbc60570e6c8430a3deff3a0cca8f5dbe5f5070553425ea16bf06f",
+        "size": 4663278
+      }
+    ]
+  },
+  "resources": {
+    "url": null,
+    "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip",
+    "sha256": "ac0f7b097efa913c3075e567922ec8982615927d5b34668750498c0841eb186c",
+    "size": 364384697,
+    "parts": [
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0001",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0001",
+        "sha256": "32d3bf24bbe63e6bca2f69b9b29ca68e4ef5e3d27fc0fe7cca95b31208d1f945",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0002",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0002",
+        "sha256": "0224a7dbad3c82170fe38f96d7ceebe0aeb2541a409216a1fadc7944141c689b",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0003",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0003",
+        "sha256": "edb91a793ce91dd440e798fdce7cbcf986c980e5cc8e3657d34529bcecae8bf9",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0004",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0004",
+        "sha256": "c9610838e6b61eb8a243c55638ccfedc40317d2ea00017131521616b22f45dc2",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0005",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0005",
+        "sha256": "571ef17b21758efc69ffdf375abccefc2ce9f63d12db0b9cb059e18d1e37714a",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0006",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0006",
+        "sha256": "6696d5a1a17d2d1567fd7125730be81206edad004ced4c90092e73d62ebbe0a4",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0007",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0007",
+        "sha256": "8a2a80da2843bb869fc78178505845996743caf01852d580246cc76205043d61",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0008",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0008",
+        "sha256": "42289b85388ecb0374e58b358a3f839b93fec75b4d341c785d5c4ca7a90e6d29",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0009",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0009",
+        "sha256": "9bc7710b2e493a88541ef47b9fe57c81ab89c0e2baecf92d6cae017a493935eb",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0010",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0010",
+        "sha256": "da95b962951eb53e3b49a4f4bd038d21749b4ed06e50617a460e32f5b2d8213d",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0011",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0011",
+        "sha256": "584e958289fad807bed871fce5e6203091312519ff349f37307fc358aee6f9fc",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0012",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0012",
+        "sha256": "07440c8fd09cd72944cb8e10217934daa86b0eadfaf9de85d66762fa044442c9",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0013",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0013",
+        "sha256": "dab3dd1417a88f87a0638d9263d82c47930fd14aed24331f240d1823cc09c6a4",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0014",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0014",
+        "sha256": "dbb1b66a8ba092820d5bc6e623836aa3d34d998827ac75e6424b2dec397e1b40",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0015",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0015",
+        "sha256": "553790e2e20d56c6f9cc0ec8a55a1e8d2dbaf48e7f64e41a598268a023b2f736",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0016",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0016",
+        "sha256": "11f7b8a1bf980d7709cf7fa8af5141d4df206f68bc0477330621de4d140499c2",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0017",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0017",
+        "sha256": "48bef25c2674c6f5a502d012f2823258d9303d631492faa15f7b86e6debf38f3",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0018",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0018",
+        "sha256": "59cfe247ac3426fbb256358ec6d7239ee9497c1b2779102e91652be720e931a6",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0019",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0019",
+        "sha256": "3880edba2c0d5959e894ebc33ddd6b112f9cb51ef02443905e669679917402fb",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0020",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0020",
+        "sha256": "e6a9bd12b9fd6969a76a80e1d43bc54d02067345abd23374b563db7c241d7af3",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0021",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0021",
+        "sha256": "41d4afeb17964e7e3c05bd639ecf40355c28b695d862bea84b6da64b38c1881b",
+        "size": 16777216
+      },
+      {
+        "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0022",
+        "fileName": "lumii-resources-bilingual-windows-x64-ac0f7b097efa913c.zip.part16m0022",
+        "sha256": "940199ba380052892e8801a9f864aee36ace85f0a2fae4ba103ffde46499e883",
+        "size": 12063161
+      }
+    ]
+  },
+  "componentCatalog": {
+    "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-component-catalog-v2-bilingual.json",
+    "fileName": "lumii-component-catalog.json",
+    "sha256": "f344134fc403cc8db8da4e65041642766bb8273509439b26e64a0160ea960ef5",
+    "size": 930
+  },
+  "providerCatalog": {
+    "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-resource-provider-b03e5c01f94e7aecb473804af2150a00587824c9806b9b51de580c994c4f760c.json",
+    "fileName": "lumii-resource-provider-b03e5c01f94e7aecb473804af2150a00587824c9806b9b51de580c994c4f760c.json",
+    "revision": 11
+  },
+  "compatibility": {
+    "url": "https://tradeos.digitalrobotics.io/releases/lumii/windows/x64/1.2/lumii-windows-compatibility-4b605f03ed72886f78d36450bdd2105d371a155f4d0ab0d887f2fa72e9cbd48d.json",
+    "fileName": "lumii-windows-compatibility-4b605f03ed72886f78d36450bdd2105d371a155f4d0ab0d887f2fa72e9cbd48d.json"
+  }
+}
